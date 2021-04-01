@@ -23,7 +23,8 @@
 
 		<!-------------START NAV BAR  ------------------------->
 		<nav id="menu" class="menu">
-			<div class="nav-logo"><a href="https://www.yixin-cao.com/pearl/">Serein</a></div>
+			<div class="nav-logo"><a href="https://www.yixin-cao.com/pearl/"><img src="/assets/logo.png" width="210px" height="70px" alt=""></a>
+			</div>
 			<ul class="dropdown">
 				<div class="menu-left">
 					<li><a>SHOP</a>
@@ -34,7 +35,7 @@
 							<li><a href="us/rings/rings.html">All Rings</a></li>
 							<li><a href="us/earrings/earrings.html">All Earrings</a></li>
 							<li><a href="us/necklaces/necklaces.html">All Necklaces</a></li>
-							<li><a href="us/braceletsbracelets.html">All Bracelets</a></li>
+							<li><a href="us/bracelets/bracelets.html">All Bracelets</a></li>
 						</ul>
 					</li>
 				</div>
@@ -46,30 +47,302 @@
 		<!-----------------END NAV BAR------------------------>
 	</div>
 
-	<!-------------------MAIN CONTENT---------------------------->
 
+	<!------------------------- GRID --------------------------- -->
 
-	<section class="m-picture">
-	</section>
-	<div class="m-text">
+	<div class="m-picture">
+
 		<h1 class="m-text-h1">Shop All</h1>
 	</div>
+	<hr>
+	<div class="all-wrapper">
 
-	<!------------------------------------------------->
-	<!-- wrapper -->
 
-	<div class="main-wrapper">
-		<div class="header">
-			<h1>Vue Shopping Cart</h1>
+		<div class="container">
+			<a target="_blank" href="/assets/all/ring/r-item-01.jpg">
+				<div class="product" data-id="id25" data-price="99.00" data-title="Signature Ring" data-img="/assets/all/ring/r-item-01.jpg" style="background: url(/assets/all/ring/r-item-01.jpg);background-size: cover;">
+					<span>Signature Ring | 竹月</span>
+				</div>
+				<span class="price">¥99</span>
 		</div>
-		<div id="vue">
-			<cart :cart="cart" :cart-sub-total="cartSubTotal" :tax="tax" :cart-total="cartTotal" :checkout-bool="checkoutBool"></cart>
-			<products :cart="cart" :cart-sub-total="cartSubTotal" :tax="tax" :cart-total="cartTotal" :products-data="productsData"></products>
-			<checkout-area v-if="checkoutBool" :cart="cart" :tax="tax" :cart-sub-total="cartSubTotal" :cart-total="cartTotal" :products-data="productsData" :total-with-tax="totalWithTax"></checkout-area>
+
+
+		<div class="container">
+			<a target="_blank" href="/assets/all/earring/e-item-01.jpg">
+				<div class="product" data-id="id02" data-price="139.00" data-title="Bluetooth Travel Speaker" data-img="/assets/all/earring/e-item-01.jpg" data-url="/assets/all/earring/e-item-01.jpg"
+					style="background: url(/assets/all/earring/e-item-01.jpg);background-size: cover;">
+					<span>Signature Earring | 奶味太妃糖</span>
+				</div>
+
+				<span class="price">¥139</span>
 		</div>
+
+		<div class="container">
+			<a target="_blank" href="/assets/all/bracelet/b-item-01.jpg">
+				<div class="product" data-id="id18" data-price="269.00" data-title="Signature Bracelet" data-img="/assets/all/bracelet/b-item-01.jpg" style="background: url(/assets/all/bracelet/b-item-01.jpg);background-size: cover;">
+					<span>Signature Bracelet | 半夏</span>
+				</div>
+				<span class="price">¥269</span>
+		</div>
+
+		<div class="container">
+			<a target="_blank" href="/assets/all/earring/e-item-02.jpg">
+				<div class="product" data-id="id01" data-price="159.00" data-title="Signature Pearl Ring" data-img="assets/all/earring/e-item-02.jpg" style="background: url(/assets/all/earring/e-item-02.jpg);background-size: cover;">
+					<span>Signature Earring | 福禄</span>
+				</div>
+				<span class="price">¥159</span>
+		</div>
+
+		<div class="container">
+			<a target="_blank" href="/assets/all/earring/e-item-16.jpg">
+				<div class="product" data-id="id16" data-price="99.00" data-title="Signature Earring" data-img="/assets/all/earring/e-item-16.jpg" data-url="/assets/all/earring/e-item-16.jpg"
+					style="background: url(/assets/all/earring/e-item-16.jpg);background-size: cover;">
+					<span>Signature Earring | 浮生未满 </span>
+				</div>
+
+				<span class="price">¥99</span>
+		</div>
+
+
+		<div class="container">
+			<a target="_blank" href="/assets/all/bracelet/b-item-02.jpg">
+				<div class="product" data-id="id19" data-price="229.00" data-title="Signature Bracelet" data-img="/assets/all/bracelet/b-item-02.jpg" style="background: url(/assets/all/bracelet/b-item-02.jpg);background-size: cover;">
+					<span>Signature Bracelet | 巴洛克幻想</span>
+				</div>
+				<span class="price">¥229</span>
+		</div>
+
+		<div class="container">
+			<a target="_blank" href="/assets/all/earring/e-item-17.jpg">
+				<div class="product" data-id="id17" data-price="99.00" data-title="Signature Earring" data-img="/assets/all/earring/e-item-17.jpg" data-url="/assets/all/earring/e-item-17.jpg"
+					style="background: url(/assets/all/earring/e-item-17.jpg);background-size: cover;">
+					<span>Signature Earring | 芙珠耳钉 </span>
+				</div>
+
+				<span class="price">¥99</span>
+		</div>
+
+
+		<div class="container">
+			<a target="_blank" href="/assets/all/earring/e-item-03.jpg">
+				<div class="product" data-id="id03" data-price="159.00" data-title="Signature Earring" data-img="/assets/all/earring/e-item-03.jpg" data-url="/assets/all/earring/e-item-03.jpg"
+					style="background: url(/assets/all/earring/e-item-03.jpg);background-size: cover;">
+					<span>Signature Earring | 自由之门</span>
+				</div>
+
+				<span class="price">¥159</span>
+		</div>
+
+
+		<div class="container">
+			<a target="_blank" href="/assets/all/bracelet/b-item-03.jpg">
+				<div class="product" data-id="id20" data-price="258.00" data-title="Signature Bracelet" data-img="/assets/all/bracelet/b-item-03.jpg" style="background: url(/assets/all/bracelet/b-item-03.jpg);background-size: cover;">
+					<span>Signature Bracelet | 巴洛克幻想</span>
+				</div>
+				<span class="price">¥258</span>
+		</div>
+
+
+		<div class="container">
+			<a target="_blank" href="/assets/all/earring/e-item-04.jpg">
+				<div class="product" data-id="id04" data-price="259.00" data-title="Signature Earring" data-img="/assets/all/earring/e-item-04.jpg" data-url="/assets/all/earring/e-item-04.jpg"
+					style="background: url(/assets/all/earring/e-item-04.jpg);background-size: cover;">
+					<span>Signature Earring | 克里斯的念想</span>
+				</div>
+
+				<span class="price">¥259</span>
+		</div>
+
+		<div class="container">
+			<a target="_blank" href="/assets/all/earring/e-item-15.jpg">
+				<div class="product" data-id="id15" data-price="169.00" data-title="Signature Earring" data-img="/assets/all/earring/e-item-15.jpg" data-url="/assets/all/earring/e-item-15.jpg"
+					style="background: url(/assets/all/earring/e-item-15.jpg);background-size: cover;">
+					<span>Signature Earring | 芙珠小耳钉耳坠 </span>
+				</div>
+
+				<span class="price">¥169</span>
+		</div>
+
+		<div class="container">
+			<a target="_blank" href="/assets/all/necklace/n-item-01.jpg">
+				<div class="product" data-id="id21" data-price="339.00" data-title="Signature Necklace" data-img="/assets/all/necklace/n-item-01.jpg" style="background: url(/assets/all/necklace/n-item-01.jpg);background-size: cover;">
+					<span>Signature Necklace | 茜茜公主</span>
+				</div>
+				<span class="price">¥339</span>
+		</div>
+
+
+		<div class="container">
+			<a target="_blank" href="/assets/all/earring/e-item-05.jpg">
+				<div class="product" data-id="id05" data-price="299.00" data-title="Signature Earring" data-img="/assets/all/earring/e-item-05.jpg" data-url="/assets/all/earring/e-item-05.jpg"
+					style="background: url(/assets/all/earring/e-item-05.jpg);background-size: cover;">
+					<span>Signature Earring | 华朱砂</span>
+				</div>
+
+				<span class="price">¥299</span>
+		</div>
+
+
+		<div class="container">
+			<a target="_blank" href="/assets/all/necklace/n-item-02.jpg">
+				<div class="product" data-id="id22" data-price="169.00" data-title="Signature Necklace" data-img="/assets/all/necklace/n-item-02.jpg" style="background: url(/assets/all/necklace/n-item-02.jpg);background-size: cover;">
+					<span>Signature Necklace | MISS YOU</span>
+				</div>
+				<span class="price">¥169</span>
+		</div>
+
+
+		<div class="container">
+			<a target="_blank" href="/assets/all/earring/e-item-06.jpg">
+				<div class="product" data-id="id06" data-price="99.00" data-title="Signature Earring" data-img="/assets/all/earring/e-item-06.jpg" data-url="/assets/all/earring/e-item-06.jpg"
+					style="background: url(/assets/all/earring/e-item-06.jpg);background-size: cover;">
+					<span>Signature Earring | 天平之约</span>
+				</div>
+
+				<span class="price">¥99</span>
+		</div>
+
+
+
+		<div class="container">
+			<a target="_blank" href="/assets/all/necklace/n-item-03.jpg">
+				<div class="product" data-id="id23" data-price="269.00" data-title="Signature Necklace" data-img="/assets/all/necklace/n-item-03.jpg" style="background: url(/assets/all/necklace/n-item-03.jpg);background-size: cover;">
+					<span>Signature Necklace | 惊鸿岁月</span>
+				</div>
+				<span class="price">¥269</span>
+		</div>
+
+		<div class="container">
+			<a target="_blank" href="/assets/all/earring/e-item-07.jpg">
+				<div class="product" data-id="id07" data-price="199.00" data-title="Signature Earring" data-img="/assets/all/earring/e-item-07.jpg" data-url="/assets/all/earring/e-item-07.jpg"
+					style="background: url(/assets/all/earring/e-item-07.jpg);background-size: cover;">
+					<span>Signature Earring </span>
+				</div>
+
+				<span class="price">¥199</span>
+		</div>
+
+
+		<div class="container">
+			<a target="_blank" href="/assets/all/necklace/n-item-04.jpg">
+				<div class="product" data-id="id24" data-price="199.00" data-title="Signature Necklace" data-img="/assets/all/necklace/n-item-04.jpg" style="background: url(/assets/all/necklace/n-item-04.jpg);background-size: cover;">
+					<span>Signature Necklace | 查尔的午后</span>
+				</div>
+				<span class="price">¥199</span>
+		</div>
+
+
+		<div class="container">
+			<a target="_blank" href="/assets/all/earring/e-item-08.jpg">
+				<div class="product" data-id="id08" data-price="99.00" data-title="Signature Earring" data-img="/assets/all/earring/e-item-08.jpg" data-url="/assets/all/earring/e-item-08.jpg"
+					style="background: url(/assets/all/earring/e-item-08.jpg);background-size: cover;">
+					<span>Signature Earring | 链爱</span>
+				</div>
+
+				<span class="price">¥99</span>
+		</div>
+
+
+
+		<div class="container">
+			<a target="_blank" href="/assets/all/ring/r-item-02.jpg">
+				<div class="product" data-id="id26" data-price="99.00" data-title="Signature Ring" data-img="/assets/all/ring/r-item-02.jpg" style="background: url(/assets/all/ring/r-item-02.jpg);background-size: cover;">
+					<span>Signature Ring | 星轨</span>
+				</div>
+				<span class="price">¥99</span>
+		</div>
+
+
+		<div class="container">
+			<a target="_blank" href="/assets/all/earring/e-item-09.jpg">
+				<div class="product" data-id="id09" data-price="199.00" data-title="Signature Earring" data-img="/assets/all/earring/e-item-09.jpg" data-url="/assets/all/earring/e-item-09.jpg"
+					style="background: url(/assets/all/earring/e-item-09.jpg);background-size: cover;">
+					<span>Signature Earring </span>
+				</div>
+
+				<span class="price">¥199</span>
+		</div>
+
+
+		<div class="container">
+			<a target="_blank" href="/assets/all/ring/r-item-03.jpg">
+				<div class="product" data-id="id27" data-price="129.00" data-title="Signature Ring" data-img="/assets/all/ring/r-item-03.jpg" style="background: url(/assets/all/ring/r-item-03.jpg);background-size: cover;">
+					<span>Signature Ring | 唯一</span>
+				</div>
+				<span class="price">¥129</span>
+		</div>
+
+		<div class="container">
+			<a target="_blank" href="/assets/all/earring/e-item-10.jpg">
+				<div class="product" data-id="id10" data-price="199.00" data-title="Signature Earring" data-img="/assets/all/earring/e-item-10.jpg" data-url="/assets/all/earring/e-item-10.jpg"
+					style="background: url(/assets/all/earring/e-item-10.jpg);background-size: cover;">
+					<span>Signature Earring </span>
+				</div>
+
+				<span class="price">¥199</span>
+		</div>
+
+
+		<div class="container">
+			<a target="_blank" href="/assets/all/ring/r-item-04.jpg">
+				<div class="product" data-id="id27" data-price="99.00" data-title="Signature Ring" data-img="/assets/all/ring/r-item-04.jpg" style="background: url(/assets/all/ring/r-item-04.jpg);background-size: cover;">
+					<span>Signature Ring | 自成一派姿态</span>
+				</div>
+				<span class="price">¥99</span>
+		</div>
+
+
+		<div class="container">
+			<a target="_blank" href="/assets/all/earring/e-item-11.jpg">
+				<div class="product" data-id="id11" data-price="199.00" data-title="Signature Earring" data-img="/assets/all/earring/e-item-11.jpg" data-url="/assets/all/earring/e-item-11.jpg"
+					style="background: url(/assets/all/earring/e-item-11.jpg);background-size: cover;">
+					<span>Signature Earring | 洛可可夫人耳坠</span>
+				</div>
+
+				<span class="price">¥199</span>
+		</div>
+
+		<div class="container">
+			<a target="_blank" href="/assets/all/earring/e-item-13.jpg">
+				<div class="product" data-id="id13" data-price="89.00" data-title="Signature Earring" data-img="/assets/all/earring/e-item-13.jpg" data-url="/assets/all/earring/e-item-13.jpg"
+					style="background: url(/assets/all/earring/e-item-13.jpg);background-size: cover;">
+					<span>Signature Earring | 小小蝴蝶结</span>
+				</div>
+
+				<span class="price">¥89</span>
+		</div>
+
+		<div class="container">
+			<a target="_blank" href="/assets/all/earring/e-item-14.jpg">
+				<div class="product" data-id="id14" data-price="189.00" data-title="Signature Earring" data-img="/assets/all/earring/e-item-14.jpg" data-url="/assets/all/earring/e-item-14.jpg"
+					style="background: url(/assets/all/earring/e-item-14.jpg);background-size: cover;">
+					<span>Signature Earring </span>
+				</div>
+
+				<span class="price">¥189</span>
+		</div>
+
+		<div class="container">
+			<a target="_blank" href="/assets/all/ring/r-item-05.jpg">
+				<div class="product" data-id="id28" data-price="99.00" data-title="Signature Ring" data-img="/assets/all/ring/r-item-05.jpg" style="background: url(/assets/all/ring/r-item-05.jpg);background-size: cover;">
+					<span>Signature Ring | 一见倾心</span>
+				</div>
+				<span class="price">¥99</span>
+		</div>
+
+		<div class="container">
+			<a target="_blank" href="/assets/all/earring/e-item-12.jpg">
+				<div class="product" data-id="id12" data-price="99.00" data-title="Signature Earring" data-img="/assets/all/earring/e-item-12.jpg" data-url="/assets/all/earring/e-item-12.jpg"
+					style="background: url(/assets/all/earring/e-item-12.jpg);background-size: cover;">
+					<span>Signature Earring | 链爱</span>
+				</div>
+
+				<span class="price">¥99</span>
+		</div>
+
+
+
 	</div>
-
-
 	<!---------------- FOOTER ----------------------------->
 	<footer class="flex-footer">
 
