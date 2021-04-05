@@ -5,9 +5,9 @@
 	<title>Serein</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="style.css">
-	<script src="main.js"></script>
-
+	<link rel="stylesheet" href="/style.css">
+	<script src="/shop.js"></script>
+	<script src="/quickview.js"></script>
 
 </head>
 
@@ -24,7 +24,7 @@
 
 		<!-------------START NAV BAR  ------------------------->
 		<nav id="menu" class="menu">
-			<div class="nav-logo"><a href="https://www.yixin-cao.com/serein/"><img src="assets/logo.png" width="210px" height="70px" alt=""></a>
+			<div class="nav-logo"><a href="https://www.yixin-cao.com/serein/"><img src="/assets/logo.png" width="210px" height="70px" alt=""></a>
 			</div>
 			<ul class="dropdown">
 				<div class="menu-left">
@@ -40,37 +40,54 @@
 						</ul>
 					</li>
 				</div>
-				<li><a href="https://www.yixin-cao.com/serein/about.html">ABOUT</a></li>
-				<li><a href="https://www.yixin-cao.com/serein/login.html">ACCOUNT</a></li>
-				<li><a class="shopping-cart" href="https://www.yixin-cao.com/serein/checkout.html"></a></li>
+				<li><a href="/about.html">ABOUT</a></li>
+				<li><a href="/login.html">ACCOUNT</a></li>
+				<li><a class="shopping-cart" href="/checkout.html"></a></li>
 			</ul>
 		</nav>
 		<!-----------------END NAV BAR------------------------>
 	</div>
 
-	<!-------------------GALLERY---------------------------->
-	<section class="content content-1"></section>
+	<!-------------------MAIN CONTENT---------------------------->
 
-	<section class="content content-2"></section>
-	<div class="animated-title">
-		<div class="text-top">
-			<div>
-				<span>Kõik Lorem</span>
-				<span>Ipsumi kipuvad </span>
+	<div class='container-product'>
+
+		<div class='highlight-window id25' id='product-img'></div>
+		<div class='window'>
+			<div class='main-content'>
+				<h2>SIGNATURE RING | 竹月</h2>
+
+				<h3>Gold Pearl Ring</h3>
+
+				<div class='options'>
+					<div class='size-picker'>
+						Size:
+						<div class='range-picker' id='range-picker'>
+							<div class='active'>XS</div>
+							<div>S</div>
+							<div>M</div>
+							<div>L</div>
+						</div>
+						<a class='small align-right' href='#'>VIEW SIZE-CHART</a>
+					</div>
+				</div>
+				<div class='divider'></div>
+
+				<div class='purchase-info'>
+					<div class='price'>¥99</div>
+					<button>ADD TO CART</button>
+				</div>
 			</div>
 		</div>
-		<div class="text-bottom">
-			<div>kindlaid Auseri</div>
-		</div>
 	</div>
-	<section class="content content-3"></section>
-	<section class="content content-4"></section>
-	<section class="content content-5"></section>
-	<section class="content content-6"></section>
+
+	<!----------------------------------------->
 
 
+
+
+	</div>
 	<!---------------- FOOTER ----------------------------->
-
 	<footer class="flex-footer">
 
 		<ul class="footer-list-col">
@@ -131,6 +148,7 @@
 			</div>
 		</section>
 	</footer>
+	<script src="/quickview.js"></script>
 </body>
 
 </html>
