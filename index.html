@@ -6,7 +6,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
-	<script src="main.js"></script>
+	<script src="search.js"></script>
+	<script src="bounce.js"></script>
 
 
 </head>
@@ -45,10 +46,19 @@
 				<li><a class="shopping-cart" href="https://www.yixin-cao.com/serein/checkout.html"></a></li>
 			</ul>
 		</nav>
-		<!-----------------END NAV BAR------------------------>
 	</div>
 
+	<!-----------------END NAV BAR------------------------>
+
+	<!---------------------search box form--------------------->
+	<!--------------------end search box form---------------------->
+	<form class="search_box" id="search_box" action="/search/">
+		<input name="search_criteria" placeholder="Search by keyword" value="" type="text">
+		<input class="search_icon" value="Search" type="submit">
+	</form>
+	<a href="#search_box" class="btn" id="search">&#9740;</a>
 	<!-------------------GALLERY---------------------------->
+	 <div id="sketch-holder"></div>
 	<section class="content content-1"></section>
 
 	<section class="content content-2"></section>
