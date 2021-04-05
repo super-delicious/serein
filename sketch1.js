@@ -7,6 +7,7 @@ let balls = [];
 function setup() {
   createCanvas(1440, 900);
   canvas.parent('sketch-holder');
+  canvas.style('z-index', '-1')
   for (let i = 0; i < numBalls; i++) {
     balls[i] = new Ball(
       random(width),
