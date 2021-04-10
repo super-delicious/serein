@@ -1,13 +1,14 @@
-let numBalls = 24;
+let numBalls = 29;
 let spring = 0.05;
 let gravity = 0.03;
 let friction = -0.9;
 let balls = [];
+var canvas;
 
 function setup() {
-  createCanvas(1440, 900);
-  canvas.parent('sketch-holder');
-  canvas.style('z-index', '-1')
+  canvas = createCanvas(1400, 520);
+  canvas.position(0,180);
+
   for (let i = 0; i < numBalls; i++) {
     balls[i] = new Ball(
       random(width),
@@ -22,7 +23,8 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  clear();
+//  background(0);
   balls.forEach(ball => {
     ball.collide();
     ball.move();

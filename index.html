@@ -3,22 +3,30 @@
 
 <head>
 	<title>Serein</title>
+	<script crossorigin="anonymous" integrity="sha256-tP4zNnerpRXfeJvXfzmqL+t7qxsN+64sHAC2IOvYMDg=" type="text/javascript" src="https://fast.appcues.com/generic/main/4.27.2/appcues.main.a7cfb65307c78a7c4015cd76d52982ae56d7b130.js" async=""></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/addons/p5.sound.min.js"></script>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
+	<script src="jquery-3.6.0.min.js"></script>
 	<script src="p5.js"></script>
 	<script src="sketch2.js"></script>
-	<script src="sketch1.js"></script>
+
 
 
 
 </head>
 
 <body>
+	<div id ="sketch1-center">
+	<script src="sketch1.js"></script>
+</div>
+
 
 	<!-------------------------Header------------------------>
 
-	<div class="nav_wrapper">
+
 		<div class="sticky">
 			<div class="store-banner">
 				<p>Free US Shipping + Returns</p>
@@ -26,9 +34,11 @@
 		</div>
 
 		<!-------------START NAV BAR  ------------------------->
+			<div class="nav_wrapper">
 		<nav id="menu" class="menu">
 			<div class="nav-logo"><a href="https://www.yixin-cao.com/serein/"><img src="assets/logo.png" width="210px" height="70px" alt=""></a>
 			</div>
+
 			<ul class="dropdown">
 				<div class="menu-left">
 					<li><a>SHOP</a>
@@ -45,10 +55,10 @@
 				</div>
 				<li><a href="https://www.yixin-cao.com/serein/about.html">ABOUT</a></li>
 				<li><a href="https://www.yixin-cao.com/serein/login.html">ACCOUNT</a></li>
-				<li><a class="shopping-cart" href="https://www.yixin-cao.com/serein/checkout.html"></a></li>
+				<li><a href="https://www.yixin-cao.com/serein/checkout.html" class="shopping-cart"></a></li>
 			</ul>
 		</nav>
-	</div>
+
 
 	<!-----------------END NAV BAR------------------------>
 
@@ -59,8 +69,10 @@
 		<input class="search_icon" value="Search" type="submit">
 	</form>
 	<a href="#search_box" class="btn" id="search">&#9740;</a>
+
+</div>
 	<!-------------------GALLERY---------------------------->
-	 <div id="sketch-holder"></div>
+
 	<section class="content content-1"></section>
 
 	<section class="content content-2"></section>
