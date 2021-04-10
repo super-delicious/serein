@@ -4,15 +4,14 @@
 <head>
 	<title>Serein</title>
 	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="jquery-3.6.0.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://www.yixin-cao.com/serein/style.css">
-<<<<<<< HEAD
-	<script src="/shop.js"></script>
-	<script src="/addtocart.js"></script>
-=======
+	<script src="https://www.yixin-cao.com/serein/sketch2.js"></script>
 	<script src="https://www.yixin-cao.com/serein/sketch3.js"></script>
 
->>>>>>> 438540ca38160730c9b602e06ce3f46a90bac0a9
+
 
 </head>
 
@@ -21,14 +20,14 @@
 	<!-------------------------Header------------------------>
 
 
-		<div class="sticky">
-			<div class="store-banner">
-				<p>Free US Shipping + Returns</p>
-			</div>
+	<div class="sticky">
+		<div class="store-banner">
+			<p>Free US Shipping + Returns</p>
 		</div>
+	</div>
 
-		<!-------------START NAV BAR  ------------------------->
-			<div class="nav_wrapper">
+	<!-------------START NAV BAR  ------------------------->
+	<div class="nav_wrapper">
 		<nav id="menu" class="menu">
 			<div class="nav-logo"><a href="https://www.yixin-cao.com/serein/"><img src="/assets/logo.png" width="210px" height="70px" alt=""></a>
 			</div>
@@ -54,7 +53,15 @@
 		</nav>
 
 
-	<!-----------------END NAV BAR------------------------>
+		<!-----------------END NAV BAR------------------------>
+		<!---------------------search box form--------------------->
+
+		<form class="search_box" id="search_box" action="/search/">
+			<input name="search_criteria" placeholder="Search by keyword" value="" type="text">
+			<input class="search_icon" value="Search" type="submit">
+		</form>
+		<a href="#search_box" class="btn" id="search">&#9740;</a>
+		<!--------------------end search box form---------------------->
 	</div>
 
 	<!-------------------MAIN CONTENT---------------------------->
