@@ -17,6 +17,7 @@
 
 <body>
 
+
 	<!-------------------------Header------------------------>
 
 
@@ -28,12 +29,22 @@
 
 	<!-------------START NAV BAR  ------------------------->
 	<div class="nav_wrapper">
+
 		<nav id="menu" class="menu">
-			<div class="nav-logo"><a href="https://www.yixin-cao.com/serein/"><img src="https://www.yixin-cao.com/serein/assets/logo.png" width="210px" height="70px" alt=""></a>
+			<div class="nav-logo"><a href="https://www.yixin-cao.com/serein/"><img src="assets/logo.png" width="210px" height="70px" alt=""></a>
 			</div>
 
+
 			<ul class="dropdown">
+				<!---------------------search box form--------------------->
+
+				<form class="search_box" id="search_box">
+					<input type="search" placeholder="Search">
+				</form>
+				<!--------------------end search box form---------------------->
+
 				<div class="menu-left">
+
 					<li><a>SHOP</a>
 						<ul>
 							<li><a href="https://www.yixin-cao.com/serein/us/all/all.html">Shop All</a></li>
@@ -49,20 +60,12 @@
 				<li><a href="https://www.yixin-cao.com/serein/about.html">ABOUT</a></li>
 				<li><a href="https://www.yixin-cao.com/serein/login.html">ACCOUNT</a></li>
 				<li><a href="https://www.yixin-cao.com/serein/checkout.html" class="shopping-cart"></a></li>
+
 			</ul>
 		</nav>
-
-
-		<!-----------------END NAV BAR------------------------>
-		<!---------------------search box form--------------------->
-
-		<form class="search_box" id="search_box" action="/search/">
-			<input name="search_criteria" placeholder="Search by keyword" value="" type="text">
-			<input class="search_icon" value="Search" type="submit">
-		</form>
-		<a href="#search_box" class="btn" id="search">&#9740;</a>
-		<!--------------------end search box form---------------------->
 	</div>
+
+	<!-----------------END NAV BAR------------------------>
 
 	<!-------------------MAIN CONTENT---------------------------->
 

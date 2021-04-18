@@ -73,17 +73,17 @@ canvas {
   opacity: 0.8;
 }
 
-.shopping-cart {
-  cursor: pointer;
+a.shopping-cart {
   background: url('assets/logo-bag.png') no-repeat 0 0;
 }
 
-.shopping-cart:hover {
+a.shopping-cart:hover {
+  background: url('assets/logo-bag.png') no-repeat 0 0;
   opacity: 1;
+  background-color: #eee;
 }
+
 /*=================START NAV BAR===================*/
-
-
 .nav {
   width: 100%;
   z-index: 1;
@@ -95,8 +95,7 @@ canvas {
   top: 0;
   width: 100%;
   background: #fff;
-    z-index: 60;
-
+  z-index: 60;
 }
 
 .menu-left {
@@ -117,8 +116,9 @@ canvas {
 }
 
 .menu ul {
-  padding: 0px;
-  margin: 0px;
+  padding: 0px 0px;
+  margin: 0px 0px;
+  margin-bottom: 5px;
   list-style: none;
   text-align: right;
 }
@@ -203,82 +203,84 @@ canvas {
 }
 
 /*=================START SEARCH BOX===============*/
-.btn {
-  padding: 100px 1%;
-  margin: 5px;
-  color: #000;
-  text-decoration: none;
-  font-family: sans-serif;
-  @include transition(all 0.1s ease-in-out);
+form {
+  position: fixed;
+  margin-top: 0px;
+  margin-left: 106px;
+  display: block;
 }
 
-.btn:hover {
-  @include transition(all 0.1s ease-in-out);
+input {
+  outline: none;
 }
 
-#search {
-  float: left;
-  font-size: 1.7em;
-  padding: 3px 10px;
-  color: #393d2d;
-  margin: 0;
-  -webkit-transform: rotate(181deg);
-  -moz-transform: rotate(181deg);
-  -ms-transform: rotate(181deg);
-  -o-transform: rotate(181deg);
-  transform: rotate(181deg);
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  font-family: inherit;
+  font-size: 100%;
 }
 
-#search:hover {
-  color: #fff;
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+  display: none;
 }
 
-.search_box {
-  clear: both;
-  width: 98%;
-  background: #000;
-  padding: 0 1%;
-  margin: 0;
-  height: 0;
-  overflow: scroll;
-  @include transition(all 0.1s ease-in-out);
+input[type=search] {
+  background: #fff url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+  border: solid 1px #ccc;
+  padding: 9px 10px 9px 32px;
+  width: 55px;
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
 }
 
-.search_box.active {
-  height: auto;
-  padding: 1%;
-  @include transition(all 0.1s ease-in-out);
+input[type=search]:focus {
+  width: 170px;
+  background-color: #fff;
+  border-color: #ffee96;
+  -webkit-box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+  -moz-box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+  box-shadow: 0 0 5px rgba(109, 207, 246, .5);
 }
 
-.search_box input {
-  width: 70%;
-  font-size: 1em;
-  margin: 0px;
-  padding: 0.5%;
-  border: none;
-  background: #fff;
+input:-moz-placeholder {
+  color: #999;
 }
 
-.search_box input.search_icon {
-  clear: both;
-  width: 10%;
-  min-width: 70px;
-  height: auto;
-  padding: 0.5%;
-  margin: 0;
-  float: right;
-  border: medium none;
-  color: #FFF;
+input::-webkit-input-placeholder {
+  color: #999;
+}
+
+#search_box input[type=search] {
+  width: 15px;
+  padding-left: 10px;
+  color: transparent;
   cursor: pointer;
-  background: #00a6c4;
-  opacity: 1;
-  @include transition(all 0.1s ease);
 }
 
-.search_box input.search_icon:hover {
-  background: #fff;
-  color: #00a6c4;
-  @include transition(all 0.1s ease);
+#search_box input[type=search]:hover {
+  background-color: #eee;
+}
+
+#search_box input[type=search]:focus {
+  width: 130px;
+  padding-left: 32px;
+  color: #000;
+  background-color: #fff;
+  cursor: auto;
+}
+
+#search_box input:-moz-placeholder {
+  color: transparent;
+}
+
+#search_box input::-webkit-input-placeholder {
+  color: transparent;
 }
 
 /*===============END SEARCH BOX======================*/
